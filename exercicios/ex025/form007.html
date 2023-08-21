@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select, dataliste e textarea</title>
+</head>
+<body>
+    
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <label for="iest">Estado</label>
+        <select name="Estado" id="iest">
+            <optgroup label="Região Sudoeste" >
+                <option value="MG">Minais Gerais</option>
+
+            
+            <optgroup label="Região Nordeste">
+                <option value="Região Nordeste">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+
+        <p>
+            <label for="iprof">Profissão </label>
+            <input type="text" name="Profi" id="iprof" list="lstprof">
+            <datalist id="lstprof" >
+                <option value="Adm">Administrador</option>
+                <option value="cont">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+
+                </p>
+                <p>
+                    <label for="imsg">Mensagem:</label><br>
+                    <textarea name="Mensagem" id="imsg" cols="30" rows="10" placeholder="Deixe aqui a sua Mensagem"></textarea>
+                </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
